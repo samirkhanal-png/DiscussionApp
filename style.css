@@ -1,0 +1,116 @@
+body{
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2{
+  font-size: 1.2em;
+}
+
+p{
+  font-size: 0.8em;
+}
+
+#discussionPortal{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+header{
+  background-color: green;
+  height: 10vh;
+  color: white;
+}
+
+header h2{
+  line-height:10vh;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+#newForm{
+  background-color: blue;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+}
+
+#discussionTexts{
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  margin:10px;
+}
+
+#inputDiscussion{
+  width: 50%;
+  height: 100%;
+  background-color: lightgray;
+}
+
+#inputDiscussion input,#inputDiscussion textarea{
+  width: 80%;
+  margin: 0 auto;
+}
+
+#inputDiscussion #wrapper{
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button{
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Default design for input form */
+
+input,textarea{ 
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#displayTexts{
+  width: 100%;
+  height: 70%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: auto;
+  margin-top: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+  align-items: center;
+}
+
+.userInquiry{
+  width: 80%;
+  border: none;
+  height: 50px;
+  font-size: 0.8em;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 5px;
+}
