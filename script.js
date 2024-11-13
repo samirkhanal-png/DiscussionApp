@@ -14,7 +14,7 @@ let discussionTextsArray=[]
 
 function getFromLocalStorage(){
   let data =JSON.parse(localStorage.getItem("discussionTexts"));
-  return data;
+  return data?data:[];
 }
 
 function saveToLocalStorage(formDataArray){
@@ -59,3 +59,4 @@ sendButton.addEventListener("click", () => {
   Questions.value = "";
 
 })
+
